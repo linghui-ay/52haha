@@ -1,0 +1,42 @@
+.slide {
+    width: 300px;
+    padding: 16px 16px 1px;
+    background-color: #FFF;
+}
+
+.slide h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f6f6f6;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+}
+.slide h4 {
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+}
+.slide h4 a {
+   background-image: none;
+   color: #333; 
+}
+.slide h4 a:hover{
+    color: #ffdc00;;
+}
+.slide img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1001px) {
+    .slide {
+        display: none;
+    }
+}

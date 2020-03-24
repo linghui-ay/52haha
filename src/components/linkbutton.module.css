@@ -1,0 +1,30 @@
+.buttons {
+    width: 100%;
+    margin-top: 50px;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */  
+    display: -moz-box; /* Firefox 17- */  
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+    display: -moz-flex; /* Firefox 18+ */  
+    display: -ms-flexbox; /* IE 10 */  
+    display: flex; 
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.buttons span {
+    display: inline-block;
+    background-color: #FFF;
+    padding: 8px 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,.04);
+    color: #aaa;
+}
+.buttons a:last-child span {
+    background: #ffdc00;
+    color: #FFF;
+    text-shadow: none;
+}
+.nomore {
+    color: #b5b5b5 !important;
+    cursor: not-allowed !important
+}

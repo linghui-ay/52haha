@@ -1,0 +1,109 @@
+.item {
+    width: 686px;
+    box-shadow: 0 0 20px rgba(0,0,0,.04);
+    background: #FFF;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
+}
+.item.about{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item.about h3 {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f6f6f6;
+}
+.item.about .aboutItem{
+    width: 32%;
+    font-size: 14px;
+    background-image: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:3;
+}
+.item.about .aboutItem img {
+    width: 100%;
+    height: 116px;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.item.about .aboutItem figcaption {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:3;
+}
+
+.item h1 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 0;
+}
+.item h1:hover {
+    color: #ffdc00;
+}
+.item p {
+    margin-top: 20px;
+}
+.item.about p {
+    width: 100%;
+    margin: 5px 0;
+}
+.item > p > img {
+    max-width: 100%;
+}
+.item pre {
+    white-space: pre-wrap;
+    color: #333;
+}
+.buttons span{
+    display: inline-block;
+    padding-left: 30px;
+    line-height: 1.25rem;
+    color: #bfbfbf;
+    margin-right: 1.25rem;
+}
+.buttons a {
+    background-image: none;
+}
+.buttons span.like{
+    background: url(../../static/dianzan.svg) no-repeat left center / 22px auto;
+}
+.buttons span.islike{
+    background: url(../../static/yellow-dianzan.svg) no-repeat left center / 22px auto;
+}
+.buttons span.read{
+    background: url(../../static/yuedu.svg) no-repeat left center / 22px auto;
+}
+.buttons span.comment{
+    background: url(../../static/pinglun.svg) no-repeat left center / 22px auto;
+}
+@media screen and (max-width: 1001px)  {
+    .item {
+        width: 100%;
+        max-width:100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .item.about .aboutItem{
+        width: 100%;
+        font-size: 14px;
+    }
+    .item.about .aboutItem img {
+        width: 80px;
+        height: 76px;
+        margin-right: 10px;
+    }
+    .item.about .aboutItem figure {
+        display: flex;
+        margin-bottom: .5rem;
+    }
+}

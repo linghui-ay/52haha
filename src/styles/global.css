@@ -1,0 +1,10 @@
+a {
+    text-decoration : none;
+}
+body > a{
+    display: block;
+    font-size: 12px;
+    background-image: none;
+    text-align: center;
+    background: #f6f6f6;
+}
